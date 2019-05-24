@@ -67,6 +67,10 @@
     <Compile Include="Base\TeamExplorerBaseSection.cs" />
     <Compile Include="CompositionServices.cs" />
     <Compile Include="ExtensionServicesFactory.cs" />
+    <Compile Include="Home\GitHubHomeContent.xaml.cs">
+      <DependentUpon>GitHubHomeContent.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Home\HomeSection.cs" />
     <Compile Include="IExtensionServices.cs" />
     <Compile Include="Images.imagemanifest.cs" />
     <Compile Include="InBoxExtensionServices.cs" />
@@ -271,6 +275,10 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Page Include="Home\GitHubHomeContent.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Sync\PublishView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
